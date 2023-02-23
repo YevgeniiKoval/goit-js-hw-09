@@ -77,10 +77,10 @@ function updateTime() {
     else {
         const { days, hours, minutes, seconds } = convertMs(deltaTime)
 
-    timerDays.textContent = `${days}` 
-    timerHours.textContent = `${hours}` 
-    timerMinutes.textContent = `${minutes}` 
-    timerSeconds.textContent = `${seconds}` 
+    timerDays.textContent = addLeadingZero(`${days}`) 
+    timerHours.textContent = addLeadingZero(`${hours}`) 
+    timerMinutes.textContent = addLeadingZero(`${minutes}`) 
+    timerSeconds.textContent = addLeadingZero(`${seconds}`) 
 
     };
 }
